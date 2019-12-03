@@ -1,0 +1,6 @@
+programa3_1: programa3_1.cpp Rectangulo.o
+	g++ programa3_1.cpp Rectangulo.o Coordenada.o -o programa3_1
+Rectangulo.o: Rectangulo.cpp Coordenada.o Rectangulo.h
+	g++ Rectangulo.cpp -c
+Coordenada.o: Coordenada.cpp Coordenada.h
+	g++ Coordenada.cpp -c
